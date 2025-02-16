@@ -1,0 +1,21 @@
+# Sensitive settings file
+settings.py
+
+# Virtual environments
+venv/
+env/
+
+# IDE/Editor configurations
+.idea/
+.vscode/
+
+# Compiled python files
+*.pyc
+__pycache__/
+
+# Log files
+*.log
+
+# Platform specific files
+*.DS_Store
+Thumbs.db

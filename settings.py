@@ -1,0 +1,5 @@
+HOST = 'localhost'
+PORT = '3306'
+USER = 'root'
+PASSWORD = 'Ax98022.'
+DB_NAME = 'library'
