@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitob qo'shish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="add-book-page">
+    <div class="container">
+        <h1>Kitob qo'shish</h1>
+        <form method="POST" action="/add-book">
+            <label for="title">Kitob nomi:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="author">Muallif:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="pages">Sahifalar soni:</label>
+            <input type="number" id="pages" name="pages" required><br><br>
+            <label for="published_year">Nashr yili:</label>
+            <input type="number" id="published_year" name="published_year" required><br><br>
+            <button type="submit">Qo'shish</button>
+        </form>
+        <br>
+        <a href="/books" class="view-books-btn">Qo'shilgan kitoblar</a>
+        <a href="/" class="view-books-btn">Bosh sahifa</a>
+    </div>
+</body>
+</html>

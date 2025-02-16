@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitoblar ro'yxati</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="books-page"> <!-- Sinf qo'shildi -->
+    <div class="container">
+        <h1>Kitoblar ro'yxati</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Kitob nomi</th>
+                <th>Muallif</th>
+                <th>Sahifalar soni</th>
+                <th>Nashr yili</th>
+            </tr>
+            {% for book in books %}
+            <tr>
+                <td>{{ book[0] }}</td>
+                <td>{{ book[1] }}</td>
+                <td>{{ book[2] }}</td>
+                <td>{{ book[3] }}</td>
+                <td>{{ book[4] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/add-book">Yangi kitob qo'shish</a>
+        <a href="/" class="view-books-btn">Bosh sahifa</a>
+    </div>
+</body>
+</html>
